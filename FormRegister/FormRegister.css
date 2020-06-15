@@ -1,0 +1,91 @@
+* {
+    font-family: "Work Sans";
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+@media all and (min-device-width: 320px) {
+    body {
+        background-image: linear-gradient(rgba(170, 167, 167, 0.602), rgba(53, 1, 1, 0.602)),
+            url(/Images/111927524-industry-automotive-tools-repair-wrench-vector-illustration.jpg);
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    nav {
+        padding: 10px 20px;
+        border-radius: 200px;
+        background-color: rgba(41, 54, 231, 0.6);
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        width: 40px;
+        position: relative;
+        top: 20px;
+        left: 50px;
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+    }
+    .theForm {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 200px;
+    }
+    form {
+        width: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    input {
+        background-color: rgba(245, 238, 238, 0.603);
+        border: solid 1px rgba(245, 238, 238, 0.603);
+        width: 100%;
+        height: 20px;
+        font-size: 25px;
+        padding: 10px 0px;
+        border-radius: 200px;
+    }
+    label {
+        font-size: 25px;
+        color: white;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+    button {
+        width: 100%;
+        height: 35px;
+        background-color: rgba(41, 54, 231, 0.6);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 200px;
+    }
+    .error {
+        color: rgb(182, 17, 17);
+        background-color: rgba(245, 238, 238, 0.603);
+        font-weight: bold;
+        width: 100%;
+        padding-top: 15px;
+        height: 20px;
+        border: solid 2px rgb(230, 58, 58);
+        display: none;
+        padding: 10px 0;
+        border-radius: 200px;
+    }
+}
+
+@media all and (min-device-width: 768px) {
+    .theForm {
+        display: flex;
+        justify-content: center;
+        top: 10px;
+        padding: 15px;
+    }
+}
+

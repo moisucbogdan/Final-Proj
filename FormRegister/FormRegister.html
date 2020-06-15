@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="icon" href="/Main Page/Images/Automotive-Battery-PNG-Clipart.png" type="image/icon type">
+    <link rel="stylesheet" href="./FormRegister.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa09f76c32.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a class="btn HomeBtn" href="/Main Page/MainPage.html"><i class="fas fa-home"></i></a>
+    </nav>
+
+    <div class="theForm">
+        <form id="form" action='/Main Page/MainPage.html' method="GET">
+            <h1 class="register">Register Here</h1>
+            <div class="error " id="userNameError"></div>
+            <label class="username " for="username">USERNAME:</label><br>
+            <input class="" type="text" name="username" id="username">
+            <p class="">Must be at least 4 characters, letters and numbers only</p>
+            <div class="error" id="emailError"></div>
+            <label for="email">EMAIL ADDRESS:</label><br>
+            <input type="text" name="email" id="email">
+            <p>Double-check your email address before continuing.</p>
+            <div class="error" id="firtNameError"></div>
+            <label for="firstname">FIRST NAME:</label><br>
+            <input type="text" name="firstname" id="firstname">
+            <p>Must be input.</p>
+            <div class="error" id="lastNameError"></div>
+            <label for="lastname">LAST NAME:</label><br>
+            <input type="text" name="lastname" id="lastname">
+            <p>Must be input.</p>
+            <br>
+            <div class="error" id="passwordError1"></div>
+            <label for="psw1">PASSWORD:</label>
+            <input type="password" name="password1" id="psw1">
+            <p class="para">Must be at least 6 characters. A lowercase, a capital, a special character & a number.</p>
+            <br>
+            <div class="error" id="passwordError2"></div>
+            <label for="psw2">CONFIRM PASSWORD:</label>
+            <input type="password" id="psw2">
+            <p class="para">Must be exactly like the one above.</p><br>
+            <div class="error" id="phoneError"></div>
+            <label for="phone">PHONE:</label><br>
+            <input type="number" name="phone" id="phone">
+            <p>Must be at least 10 characters, numbers only.</p>
+            <button type="submit" id="button">Submit</button>
+        </form>
+    </div>
+
+    <script src="./FormRegister.js"></script>
+</body>
+
+</html>
