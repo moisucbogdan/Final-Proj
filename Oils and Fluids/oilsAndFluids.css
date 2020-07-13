@@ -6,12 +6,14 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 @media all and (min-device-width: 320px) {
-/*--------------------*/
+    /*--------------------*/
     /* Nav Setup */
     /*--------------------*/
-    header{
-        background-image: linear-gradient(rgba(170, 167, 167, 0.602), rgba(53, 1, 1, 0.602)), url(/Images/86718156_3208560485839356_1012088964330291200_o.jpg);
+    header {
+        background-image: linear-gradient(rgba(170, 167, 167, 0.602), rgba(53, 1, 1, 0.602)),
+            url(/Images/86718156_3208560485839356_1012088964330291200_o.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -27,7 +29,7 @@
         grid-gap: 15px;
         justify-items: center;
         align-items: center;
-    } 
+    }
     .liLogIn {
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -43,11 +45,11 @@
     /*--------------------*/
     /* Buttons Style */
     /*--------------------*/
-    
+
     .btn:link,
     .btn:visited {
         padding: 10px 30px;
-        border-radius: 200px;
+        border-radius: 10px;
         color: rgb(255, 255, 255);
     }
     .oilsAndFluidsBtn:link,
@@ -74,74 +76,226 @@
     .btn {
         font-weight: 350;
     }
-    .oilsAndFluidsconatiner{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, 10vw);
-        grid-gap: 15px;
-        justify-items: center;
-        align-items: center;
+
+    /*--------------------*/
+    /* Home Button */
+    /*--------------------*/
+
+    .home {
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgba(224, 210, 18, 0.8);
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        width: 40px;
         position: relative;
-        top: 100px;
+        top: 20px;
+        left: 10px;
     }
-    img{
-        width: 7vw;
+    .btnHome {
+        color: white;
+        font-size: 20px;
+    }
+
+    /*--------------------*/
+    /* Products */
+    /*--------------------*/
+
+    .titleOils {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .content {
+        background-image: linear-gradient(rgba(238, 238, 238, 0.602), rgba(80, 70, 70, 0.602)),
+            url(/Images/istockphoto-1141238148-1024x1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(246, 246, 246);
+        border-top: 5px solid rgba(165, 49, 49, 0.65);
+    }
+    .oilsAndFluidsconatiner {
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-rows: repeat(6, 250px);
+        grid-gap: 20px;
+        padding: 50px 0;
+    }
+    .productsOils {
+        display: flex;
+        justify-content: center;
+    }
+    .oils {
+        width: 80px;
+    }
+    .image {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(209, 209, 209);
+        transition: transform 0.5s ease;
+        border-radius: 10px;
+    }
+    .image:hover {
+        transform: scale(1.1);
+    }
+    .addCart {
+        background-color: yellow;
+        width: 50%;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        transition: 2s;
+        color: rgb(0, 0, 0);
+    }
+    .oilsDescription {
+        display: none;
+    }
+    .filterDiv {
+        display: none;
+    }
+    .show {
+        display: initial;
+        display: flex;
+    }
+    .checkboxContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
-
-
-@media all and (min-device-width: 768px) {
-    
+@media all and (min-device-width: 765px) {
     /*--------------------*/
     /* Basic Setup */
     /*--------------------*/
-    
+
     .btn {
         font-size: 4vw;
     }
-   
+
     /*--------------------*/
     /* Header Setup*/
     /*--------------------*/
-    
+
     .mainNav {
         grid-gap: 0;
     }
+    /*--------------------*/
+    /* Products */
+    /*--------------------*/
+    h2 {
+        font-size: 50px;
+    }
+    .oilsAndFluidsconatiner {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 320px);
+        grid-gap: 20px;
+        padding: 50px 0;
+    }
+    .oilsDescription {
+        display: initial;
+        width: 200px;
+        height: 55px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .image {
+        width: 300px;
+    }
+    .titleOils {
+        font-size: 40px;
+    }
+    #myBtnContainer {
+        font-size: 30px;
+    }
+    .radio {
+        height: 20px;
+        width: 20px;
+    }
+    .image {
+        transition: transform 1s ease;
+    }
+    .scroll {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding-right: 17px;
+        box-sizing: content-box;
+    }
 }
+
 @media all and (min-device-width: 1080px) {
-    
     /*--------------------*/
     /* Basic Setup */
     /*--------------------*/
-    
+
     .btn {
         font-size: 2.5vw;
     }
-    
+    /*--------------------*/
+    /* Home Button */
+    /*--------------------*/
+    .home {
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgba(224, 210, 18, 0.8);
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        width: 50px;
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    .btnHome {
+        color: white;
+        font-size: 30px;
+    }
+
     /*--------------------*/
     /* Nav Setup */
     /*--------------------*/
-    
+
     .mainNav {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
     }
-    .nav{
+    .nav {
         padding: 50px;
     }
     
-    
+}
 
-@media all and (min-device-width: 1400px) {
-    
+@media all and (min-width: 1400px) and (max-width: 5000px) {
     /*--------------------*/
     /* Basic Setup */
     /*--------------------*/
-    
+
     .btn {
-        font-size: 1.5vw;
+        font-size: 20px;
+        
     }
-}
+    .oilsAndFluidsconatiner {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, 350px);
+        grid-gap: 20px;
+        padding: 50px 0;
+    }
+   
+    
 }

@@ -124,6 +124,7 @@ html{
         font-weight: 350;
     }
     
+    
     /*--------------------*/
     /* Footer Setup */
     /*--------------------*/
@@ -156,16 +157,16 @@ html{
     }
     .icon {
         font-size: 20px;
-        color: rgb(0, 0, 0);
+        color: rgba(255, 255, 255, 0.85);
     }
     .FollowUsContainer {
         left: 20%;
     }
     .btnNeedHelp{
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.85);
     }
     .footerTitles{
-        color: white;
+        color: rgba(255, 255, 255, 0.86);
     }
 
 }

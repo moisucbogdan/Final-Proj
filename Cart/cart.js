@@ -143,7 +143,7 @@ function displayCart() {
 
         productContainer.innerHTML += `
             <div class="basketTotalContainer">
-                <h4 class="basketTotalTitle">Basket Total</h4>
+                <h4 class="basketTotalTitle">Cart Total</h4>
                 <h4 class="basketTotal">$${cart},00</h4>
             </div>`
 
@@ -162,11 +162,8 @@ function manageQuantity() {
 
     for(let i=0; i < increaseButtons.length; i++) {
         decreaseButtons[i].addEventListener('click', () => {
-            console.log(cartItems);
             currentQuantity = decreaseButtons[i].parentElement.querySelector('span').textContent;
-            console.log(currentQuantity);
             currentProduct = decreaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-            console.log(currentProduct);
 
             if( cartItems[currentProduct].inCart > 1 ) {
                 cartItems[currentProduct].inCart -= 1;
@@ -178,11 +175,8 @@ function manageQuantity() {
         });
 
         increaseButtons[i].addEventListener('click', () => {
-            console.log(cartItems);
             currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
-            console.log(currentQuantity);
             currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-            console.log(currentProduct);
 
             cartItems[currentProduct].inCart += 1;
             cartNumbers(cartItems[currentProduct]);
@@ -200,8 +194,7 @@ function deleteButtons() {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
     let productName;
-    console.log(cartItems);
-
+    
     for(let i=0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', () => {
             productName = deleteButtons[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();

@@ -19,7 +19,7 @@ const error = document.querySelector('#password');
 const pswMust = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/
 form.addEventListener('input', (e) => {
     let messages = [];
-    if(pswMust.test(error.value) === false){
+    if (pswMust.test(error.value) === false) {
         messages.push("Please enter a Valid Password.")
         document.getElementById('passwordError').style.display = 'block';
     };
@@ -32,9 +32,17 @@ form.addEventListener('input', (e) => {
 
 const button = document.getElementById('button');
 button.addEventListener("click", (e) => {
-    if(emailFormat.test(email.value) === false){
+    if (emailFormat.test(email.value) === false) {
         e.preventDefault()
-    }else if(pswMust.test(error.value) === false){
+    } else if (pswMust.test(error.value) === false) {
         e.preventDefault()
     }
 });
+
+function validateForm() {
+    let validate = document.forms["myForm"]["email"]["password"].value;
+    if (validate == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}

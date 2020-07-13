@@ -17,58 +17,164 @@
                 <li class="liContact"><a class="btn navBtn ContactBtn" href="#">Contact</a></li>
                 <li class="liRegister"><a class="btn navBtn RegisterBtn"
                         href="/FormRegister/FormRegister.html">Register</a></li>
-                <li class="liLogIn"><a class="btn navBtn LogInBtn" href="/Log In/logInForm.html">Log In</a></li>
+                <li class="liLogIn"><a class="btn navBtn LogInBtn" href="/Log In/logInForm.html">Log&nbsp;In</a></li>
                 <li class="liCart"><a class="btn navBtn CartBtn" href="/Cart/cart.html"><i
                             class="fas fa-shopping-basket"><span> 0</span></i></a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="oilsAndFluidsconatiner">
-        <div class="image">
-            <img src="/Images/oils/castrol.jpg" alt="oilsAdnFluids">
-            <h3>Castrol</h3>
-            <h3>$15,00</h3>
-            <a class="addCart cart1" href="#">Add Cart</a>
-            <input type="hidden" value="15" />
+
+    <div class="content">
+
+        <div class="home">
+            <ul class="homeNav">
+                <li class="HomeButton"><a class="btnHome" href="/Main Page/MainPage.html"><i
+                            class="fas fa-home"></i></a>
+                </li>
+            </ul>
         </div>
-        <div class="image">
-            <img src="/Images/oils/mobilOne.jpg" alt="oilsAdnFluids">
-            <h3>Mobil One</h3>
-            <h3>$10,00</h3>
-            <a class="addCart cart2" href="#">Add Cart</a>
-            <input type="hidden" value="10" />
+        <br>
+        <div class="titleOils">
+            <h2>Oils and Fluids</h2>
         </div>
-        <div class="image">
-            <img src="/Images/oils/liquiMoly.jpg" alt="oilsAdnFluids">
-            <h3>Liqui Moly</h3>
-            <h3>$20,00</h3>
-            <a class="addCart cart3" href="#">Add Cart</a>
-            <input type="hidden" value="20" />
+        <br>
+        <div class="checkboxContainer">
+            <div id="myBtnContainer">
+                <h4>Filter Results</h4>
+                <br>
+                <input type="checkbox" class="radio" name="check" onclick="onlyOne(this), filterSelection('all')"> Show
+                all</input>
+                <input type="checkbox" class="radio" name="check" onclick="onlyOne(this), filterSelection('oil')">
+                Oils</input>
+                <input type="checkbox" class="radio" name="check" onclick="onlyOne(this), filterSelection('fluid')">
+                Fluids</input>
+            </div>
         </div>
-        <div class="image">
-            <img src="/Images/oils/barkeFluid.jpg" alt="oilsAdnFluids">
-            <h3>Brake Fluid</h3>
-            <h3>$15,00</h3>
-            <a class="addCart cart4" href="#">Add Cart</a>
-            <input type="hidden" value="15" />
-        </div>
-        <div class="image">
-            <img src="/Images/oils/powerSteeringFluid.jpg" alt="oilsAdnFluids">
-            <h3>Power Steering Fluid</h3>
-            <h3>$12,00</h3>
-            <a class="addCart cart5" href="#">Add Cart</a>
-            <input type="hidden" value="12" />
-        </div>
-        <div class="image">
-            <img src="/Images/oils/dsgFluid.jpg" alt="oilsAdnFluids">
-            <h3>DSG Fluid</h3>
-            <h3>$20,00</h3>
-            <a class="addCart cart6" href="#">Add Cart</a>
-            <input type="hidden" value="20" />
+        <div class="oilsAndFluidsconatiner all">
+            <div class="productsOils filterDiv oil">
+                <div class="image image1">
+                    <img class="oils" src="/Images/oils/castrol.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>Castrol</h3>
+                    <h3>$15,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>Castrol EDGE Professional OE 5W-30 is a full synthetic engine oil. Castrol EDGE
+                                Professional, boosted with TITANIUM FST TM , provides outstanding oil strength for
+                                today's engines that work harder, with higher pressures than ever before. Castrol EDGE
+                                is our strongest and most advanced range of engine oils.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart1" href="#">Add Cart</a>
+                    <input type="hidden" value="15" />
+                </div>
+            </div>
+            <div class="productsOils filterDiv oil">
+                <div class="image image2">
+                    <img class="oils" src="/Images/oils/mobilOne.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>Mobil One</h3>
+                    <h3>$10,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>This premium synthetic oil offers unparalleled protection against engine wear,
+                                all-weather
+                                performance, efficiency, and longevity for automotive engines. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart2" href="#">Add Cart</a>
+                    <input type="hidden" value="10" />
+                </div>
+            </div>
+            <div class="productsOils filterDiv oil">
+                <div class="image image3">
+                    <img class="oils" src="/Images/oils/liquiMoly.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>Liqui Moly</h3>
+                    <h3>$20,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>LIQUI MOLY Molygen is a high performance low-friction motor oil for year-round use. The
+                                combination of high-quality base oil and advanced additive technology as well as the
+                                special Molygen additive ensures optimal viscosity with a high shear stability and
+                                reliability. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart3" href="#">Add Cart</a>
+                    <input type="hidden" value="20" />
+                </div>
+
+            </div>
+            <div class="productsOils filterDiv fluid">
+                <div class="image image4">
+                    <img class="oils" src="/Images/oils/barkeFluid.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>Brake Fluid</h3>
+                    <h3>$15,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>Brake fluid, also known as hydraulic fluid, is responsible for moving the various
+                                components of your vehicle's braking system. The fluid operates under high temperatures
+                                and high pressure and, without it, your car or truck would not be able to stop when you
+                                push the brake pedal inside your vehicle. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart4" href="#">Add Cart</a>
+                    <input type="hidden" value="15" />
+                </div>
+            </div>
+            <div class="productsOils filterDiv fluid">
+                <div class="image image5">
+                    <img class="oils" src="/Images/oils/powerSteeringFluid.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>Power Steering Fluid</h3>
+                    <h3>$12,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>Without getting too technical, power steering fluid is the hydraulic fluid that transmits
+                                the power in your steering system. In a bit more detail, it helps create the pressure
+                                that pushes on either side of your car's rack-mounted piston, allowing you to turn the
+                                wheels with ease. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart5" href="#">Add Cart</a>
+                    <input type="hidden" value="12" />
+                </div>
+            </div>
+            <div class="productsOils filterDiv fluid">
+                <div class="image image6">
+                    <img class="oils" src="/Images/oils/dsgFluid.jpg" alt="oilsAdnFluids">
+                    <br>
+                    <h3>DSG Fluid</h3>
+                    <h3>$20,00</h3>
+                    <br>
+                    <div class="oilsDescription">
+                        <div class="scroll">
+                            <p>The customer is now a bit worried about what might happen to his tranny on the long term
+                                from using this. BG Products actually does make a DSG specific fluid p/n 319 and it is
+                                amber colored. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="addCart cart6" href="#">Add Cart</a>
+                    <input type="hidden" value="20" />
+                </div>
+            </div>
         </div>
     </div>
     <script src="/Cart/cart.js"></script>
+    <script src="/Oils and Fluids/search.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
