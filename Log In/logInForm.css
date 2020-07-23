@@ -70,6 +70,7 @@
         margin: 10px;
         width: 70px;
         height: 40px;  
+        cursor: pointer;
     }
     .signUp{
         color: rgba(224, 210, 18, 0.80);

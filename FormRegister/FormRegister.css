@@ -11,10 +11,11 @@
         min-height: 100vh;
         background-size: cover;
         background-position: center;
+        background-color: rgba(170, 167, 167, 0.602);
     }
     nav {
         padding: 10px 20px;
-        border-radius: 200px;
+        border-radius: 10px;
         background-color: rgba(41, 54, 231, 0.6);
         height: 20%;
         display: flex;
@@ -47,7 +48,8 @@
         height: 20px;
         font-size: 25px;
         padding: 10px 0px;
-        border-radius: 200px;
+        border-radius: 10px;
+        padding: 10px;
     }
     label {
         font-size: 25px;
@@ -64,8 +66,10 @@
         color: white;
         border: none;
         padding: 10px 30px;
-        border-radius: 200px;
+        border-radius: 10px;
+        cursor: pointer;
     }
+ 
     .error {
         color: rgb(182, 17, 17);
         background-color: rgba(245, 238, 238, 0.603);
@@ -76,7 +80,12 @@
         border: solid 2px rgb(230, 58, 58);
         display: none;
         padding: 10px 0;
-        border-radius: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    p{
+        padding: 0;
+        margin: 0;
     }
 }
 
