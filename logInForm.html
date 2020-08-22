@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO VDM</title>
+    <link rel="icon" href="/Main Page/Automotive-Battery-PNG-Clipart.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="./logInForm.css">
+    <script src="https://kit.fontawesome.com/fa09f76c32.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="homeNav">
+            <li class="HomeButton"><a class="btn" href="/Main Page/MainPage.html"><i class="fas fa-home"></i></a>
+            </li>
+        </ul>
+    </nav>
+<section>
+    <div class="theForm">
+
+        <form id="form" name="myForm" action='/Main Page/MainPage.html' method="GET">
+            <div class="formTitle">
+                <h1>Log In</h1>
+            </div><br>
+            <div class="error" id="emailError"></div>
+            <label for="email">EMAIL ADDRESS:</label>
+            <input type="text" name="email" id="email" class="email">
+            <p>Double-check your email address before continuing.</p>
+            <br>
+            
+            <div class="error" id="passwordError"></div>
+            <label for="password">PASSWORD:</label>
+            <input type="password" name="password" id="password">
+            <p>Must be input.</p>
+            <div class="signUpButton">
+                <button type="submit" id="button">Sign In</button>
+            </div>
+            <a href="/FormRegister/FormRegister.html" class="signUp">Don't have an account? Sign up here!</a>
+        </form>
+    </div>
+</section>
+    <script src="./logInForm.js"></script>
+</body>
+
+</html>
